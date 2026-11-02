@@ -1,0 +1,32 @@
+[
+  {
+    "package": "maze_bringup",
+    "launch": "maze2.launch.py",
+    "wait_start_zero": true,
+    "scan_points": 360,
+    "odom_received": true,
+    "enabled_motion": true,
+    "paused_zero": true,
+    "max_observed_command": 0.53
+  },
+  {
+    "package": "maze_bringup",
+    "launch": "mpc_maze2.launch.py",
+    "wait_start_zero": true,
+    "scan_points": 360,
+    "odom_received": true,
+    "enabled_motion": true,
+    "paused_zero": true,
+    "max_observed_command": 0.018269992295646145
+  },
+  {
+    "package": "maze_wall_pid",
+    "launch": "merged.launch.py",
+    "wait_start_zero": true,
+    "scan_points": 360,
+    "odom_received": true,
+    "enabled_motion": true,
+    "paused_zero": true,
+    "max_observed_command": 1.5
+  }
+]

@@ -1,0 +1,5 @@
+Repository: https://github.com/ROBOTIS-GIT/turtlebot3
+Branch: humble
+Commit: 90a68bd2e3c61c12966779da89d8eeaec82730e9
+Package: turtlebot3_description
+Local source changes: none

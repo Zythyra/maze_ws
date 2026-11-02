@@ -1,0 +1,46 @@
+# Merged maze: robust corridor tracing through alternating S bends.
+# The supplied curved S corridor has 2 m between wall centre lines (1.7 m free).
+left2_lidar:
+  ros__parameters:
+    use_sim_time: true
+    enabled: true
+    linear_speed: 1.5
+    # Free space between wall faces, not the 2 m between their centre lines.
+    road_width: 1.70
+    target_left_distance: 0.85
+    center_corridor: true
+    corridor_width_min: 1.0
+    corridor_width_max: 2.6
+    width_filter_time: 0.60
+    width_change_rate: 0.40
+    trace_horizon: 1.50
+    center_trace_horizon: 0.85
+    tangent_fit_window: 0.18
+    geometric_line_control: true
+    dual_wall_geometry: true
+    heading_gain: 3.0
+    curvature_filter_time: 0.20
+    curvature_limit: 1.2
+    trace_step: 0.015
+    max_left_distance: 1.60
+    pid_p: 4.0
+    pid_i: 0.0
+    pid_d: 12.0
+    angular_limit: 2.0
+    integral_limit: 0.15
+    yaw_rate_gain: 0.30
+    angular_acceleration_limit: 4.0
+    lost_confirm_frames: 2
+    turn_angular_speed: 0.60
+    right_angular_limit: 0.80
+    front_turn_distance: 0.50
+    emergency_distance: 0.25
+    scan_timeout: 0.7
+    debug_window: true
+    exit_detection_enabled: true
+    exit_clearance: 1.40
+    # Confirm open space, clear the wall ends, then confirm measured standstill.
+    exit_open_confirm_time: 0.10
+    exit_clear_distance: 0.30
+    exit_confirm_time: 0.50
+    exit_min_travel: 5.0

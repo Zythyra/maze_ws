@@ -1,0 +1,17 @@
+{
+  "maze_bringup": {
+    "launches": [
+      "maze2.launch.py",
+      "mpc_maze2.launch.py"
+    ],
+    "internal_simulation_module": "launch_support/simulation.py",
+    "standalone_simulation_entry": false
+  },
+  "maze_wall_pid": {
+    "launches": [
+      "merged.launch.py"
+    ],
+    "internal_simulation_module": "launch_support/simulation.py",
+    "standalone_simulation_entry": false
+  }
+}

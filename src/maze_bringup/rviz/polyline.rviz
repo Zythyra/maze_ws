@@ -1,0 +1,166 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Background Color: 225; 228; 232
+    Fixed Frame: map
+    Frame Rate: 30
+  Displays:
+  - Class: rviz_default_plugins/Map
+    Name: SLAM Map
+    Enabled: true
+    Alpha: 0.8
+    Topic:
+      Value: /map
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Depth: 5
+    Draw Behind: true
+    Color Scheme: map
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+    Cell Size: 0.25
+    Plane Cell Count: 30
+    Color: 145; 150; 160
+  - Class: rviz_default_plugins/RobotModel
+    Name: TurtleBot3 Burger
+    Enabled: true
+    Visual Enabled: true
+    Collision Enabled: false
+    Description Source: Topic
+    Description Topic:
+      Value: /robot_description
+      Durability Policy: Transient Local
+      Reliability Policy: Reliable
+      History Policy: Keep Last
+      Depth: 1
+  - Class: rviz_default_plugins/LaserScan
+    Name: LaserScan
+    Enabled: true
+    Topic:
+      Value: /scan
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 5
+    Size (m): 0.015
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 150; 150; 150
+  - Class: rviz_default_plugins/TF
+    Name: TF
+    Enabled: false
+  - Class: rviz_default_plugins/Path
+    Name: Global route (network is in markers)
+    Enabled: false
+    Topic:
+      Value: /polyline/global_path
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Color: 40; 100; 240
+    Line Style: Lines
+    Line Width: 0.035
+    Pose Style: None
+  - Class: rviz_default_plugins/Path
+    Name: Active PP path
+    Enabled: true
+    Topic:
+      Value: /polyline/active_path
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Color: 255; 170; 30
+    Line Style: Lines
+    Line Width: 0.025
+    Pose Style: None
+  - Class: rviz_default_plugins/Path
+    Name: Driven trajectory
+    Enabled: true
+    Topic:
+      Value: /polyline/trajectory
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Color: 40; 180; 60
+    Line Style: Lines
+    Line Width: 0.015
+    Pose Style: None
+  - Class: rviz_default_plugins/Path
+    Name: A* return to start (purple)
+    Enabled: true
+    Topic:
+      Value: /polyline/astar_return_path
+      Reliability Policy: Reliable
+      Durability Policy: Transient Local
+      History Policy: Keep Last
+      Depth: 1
+    Color: 185; 40; 255
+    Line Style: Lines
+    Line Width: 0.045
+    Pose Style: None
+  - Class: rviz_default_plugins/Path
+    Name: MPC nonlinear prediction (red)
+    Enabled: true
+    Topic:
+      Value: /polyline/mpc_predicted_path
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Color: 235; 55; 45
+    Line Style: Lines
+    Line Width: 0.025
+    Pose Style: None
+  - Class: rviz_default_plugins/Path
+    Name: MPC time reference (yellow)
+    Enabled: true
+    Topic:
+      Value: /polyline/mpc_reference_path
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+    Color: 240; 220; 30
+    Line Style: Lines
+    Line Width: 0.015
+    Pose Style: None
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Roads - blue visited, cyan unexplored, magenta return target
+    Enabled: true
+    Topic:
+      Value: /polyline/markers
+      Reliability Policy: Reliable
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 1
+  Tools:
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Interact
+    Hide Inactive Objects: true
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/FocusCamera
+  - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.0
+      Target Frame: <Fixed Frame>
+      Pitch: 1.45
+      Yaw: 0.0
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.1
+Window Geometry:
+  Width: 1200
+  Height: 800

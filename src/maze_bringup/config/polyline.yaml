@@ -1,0 +1,42 @@
+polyline_follower:
+  ros__parameters:
+    use_sim_time: true
+    enabled: true
+    planning_frame: map
+    junction_merge_radius: 0.22
+    map_tf_timeout: 1.0
+    wall_clearance: 0.30
+    lookahead: 0.32
+    prediction_time: 0.10
+    yaw_rate_gain: 0.5
+    align_enter_angle: 2.40
+    align_exit_angle: 0.50
+    mpc_align_enter_angle: 0.85
+    mpc_align_exit_angle: 0.50
+    max_linear_speed: 0.53
+    max_angular_speed: 4.3
+    max_alignment_speed: 2.4
+    goal_tolerance: 0.065
+    turn_preview: 0.48
+    map_dead_end_pruning: true
+    scan_timeout: 0.7
+    # Used by optimized_pp/mpc; legacy pp remains the default entry.
+    reference_clearance: 0.18
+    reference_lateral_accel: 0.9
+    mpc_horizon: 20
+    mpc_dt: 0.05
+    exit_detection_enabled: true
+    exit_clearance: 1.0
+    exit_confirm_time: 0.8
+    exit_min_travel: 1.0
+    exit_required_open_sides: 3
+    exit_sector_half_angle_deg: 10.0
+    exit_min_open_arc_deg: 180.0
+    return_home_enabled: true
+    return_clearance: 0.20
+    return_wall_cost: 4.0
+    return_lookahead: 0.28
+    return_goal_tolerance: 0.10
+    return_goal_gain: 1.2
+    return_stop_time: 0.6
+    return_retry_period: 2.0

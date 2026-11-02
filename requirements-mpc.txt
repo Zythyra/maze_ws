@@ -1,0 +1,3 @@
+# ROS2 Humble uses system NumPy/SciPy. Do not replace them with pip wheels.
+osqp==1.0.4
+joblib==1.4.2

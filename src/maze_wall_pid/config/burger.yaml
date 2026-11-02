@@ -1,0 +1,5 @@
+velocity_guard:
+  ros__parameters:
+    max_linear_speed: 0.65
+    max_angular_speed: 4.8
+    command_timeout: 0.5
