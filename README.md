@@ -137,7 +137,7 @@ maze_ws/
 └── requirements-mpc.txt     # 可选拓展依赖
 ```
 
-[课程报告PDF](docs/report/11_丁俊豪_刘韩旭_综合设计报告.pdf) · [课程报告Word](docs/report/11_丁俊豪_刘韩旭_综合设计报告.docx) · [实验记录](docs/EXPERIMENTS.md) · [代码与地图来源](docs/SOURCES.md)
+[课程报告PDF](docs/report/11_丁俊豪_刘韩旭_综合设计报告.pdf) · [课程报告Word](docs/report/11_丁俊豪_刘韩旭_综合设计报告.docx) · [公式LaTeX源码](docs/report/equations.tex) · [实验记录](docs/EXPERIMENTS.md) · [代码与地图来源](docs/SOURCES.md)
 
 GitHub保存源码和公开文档；课程提交ZIP按整工作空间组织，排除根目录`build/`、`install/`，解压后重新编译。
 
