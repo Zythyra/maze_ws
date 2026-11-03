@@ -169,4 +169,4 @@ ros2 launch maze_bringup mpc_maze2.launch.py
 
 系统框架、算法方案、参数取舍与实验结论由两名组员确定。AI按既定方案辅助代码编写、ROS 2适配、排错和资料整理，并辅助报告润色、流程图绘制及排版。组员完成方案集成、调参、实验分析和内容完善；图表依据保存的仿真记录制作。
 
-PID巡线思路与有界PID参考[既有ROS 1 left2.cpp](https://github.com/Zythyra/ifly2_2026/blob/main/src/line_follow/src/left2.cpp)，机器人模型来自[ROBOTIS TurtleBot3](https://github.com/ROBOTIS-GIT/turtlebot3)和[官方仿真包](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)，在线SLAM使用[slam_toolbox](https://github.com/SteveMacenski/slam_toolbox)。版本与改编范围见[SOURCES](docs/SOURCES.md)。本仓库采用[Apache-2.0](LICENSE)，外部资源保留各自许可证和来源记录。
+墙点提取与有界PID实现参考[既有ROS 1 left2.cpp](https://github.com/Zythyra/ifly2_2026/blob/main/src/line_follow/src/left2.cpp)，机器人模型来自[ROBOTIS TurtleBot3](https://github.com/ROBOTIS-GIT/turtlebot3)和[官方仿真包](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)，在线SLAM使用[slam_toolbox](https://github.com/SteveMacenski/slam_toolbox)。版本与改编范围见[SOURCES](docs/SOURCES.md)。本仓库采用[Apache-2.0](LICENSE)，外部资源保留各自许可证和来源记录。

@@ -7,7 +7,7 @@
 | 资源 | 原始来源 | 本项目使用与修改 |
 | --- | --- | --- |
 | Burger描述与仿真模型 | [turtlebot3 / humble](https://github.com/ROBOTIS-GIT/turtlebot3/tree/humble)、[turtlebot3_simulations / humble](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/humble) | `src/vendor/`保留上游资源；launch准备世界、生成模型并配置仿真接口 |
-| PID巡线参考 | [ifly2_2026 / left2.cpp](https://github.com/Zythyra/ifly2_2026/blob/main/src/line_follow/src/left2.cpp) | 将视觉边界点替换为激光墙点，加入净宽估计、双墙融合、曲率/朝向控制及出口状态机 |
+| 墙点提取与PID参考 | [ifly2_2026 / left2.cpp](https://github.com/Zythyra/ifly2_2026/blob/main/src/line_follow/src/left2.cpp) | 参考连续边界点提取与有界PID实现，基于激光墙点加入净宽估计、双墙融合、曲率/朝向控制及出口状态机 |
 | 在线SLAM | [slam_toolbox](https://github.com/SteveMacenski/slam_toolbox) | 生成map定位、位姿图和占据栅格，辅助拓扑几何修正与已观测死路判定 |
 | PP几何原理 | [Coulter, Implementation of the Pure Pursuit Path Tracking Algorithm](https://publications.ri.cmu.edu/implementation-of-the-pure-pursuit-path-tracking-algorithm) | 实现前瞻圆交点、位姿预测与差速追踪；与自建道路拓扑、Dijkstra及栅格A*返航集成 |
 | 课程world | 提供的`maze2.world`、`merged_maze.world` | 配置入口出生位姿、统一场景入口及兼容光照；合并图保持原墙体几何 |
