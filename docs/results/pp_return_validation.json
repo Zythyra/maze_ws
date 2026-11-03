@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-20",
+  "task": "Exit maze, plan a new A* route on SLAM map, return using pure pursuit, stop at start",
+  "tests": {
+    "suites": [
+      {
+        "file": "test_left2_trace.gtest.xml",
+        "tests": 8,
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0
+      },
+      {
+        "file": "test_polyline.xunit.xml",
+        "tests": 63,
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0
+      },
+      {
+        "file": "test_return_planner.xunit.xml",
+        "tests": 13,
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0
+      }
+    ],
+    "summary": "87 checks, 0 errors, 0 failures, 0 skipped; includes suite wrappers"
+  },
+  "maze2": {
+    "launch": "ros2 launch maze_bringup maze2.launch.py",
+    "foreground": true,
+    "default_bottom_entrance": true,
+    "spawn_world": [
+      -2.275,
+      -3.8,
+      0.01
+    ],
+    "spawn_yaw": 1.5707963267948966,
+    "result": {
+      "state": "HOME_REACHED",
+      "success": true,
+      "finished": true,
+      "reason": "A* return completed; robot is back at the start",
+      "frame": "map",
+      "position": [
+        0.061755601735951765,
+        0.07230489380609416
+      ],
+      "home": [
+        -3.2107927521974105e-05,
+        -1.1802533517295445e-09
+      ]
+    },
+    "planned_length_m": 16.83900882421126,
+    "expanded_cells": 18326,
+    "planning_attempts": 1,
+    "final_home_distance_map_m": 0.09510898435187114,
+    "exit_to_home_sim_s": 32.639999999999986,
+    "stages": [
+      {
+        "phase": "EXPLORING",
+        "elapsed_s": 0.11123926399886841,
+        "sim_time_s": 42.908,
+        "odom_distance_m": 18.923
+      },
+      {
+        "phase": "PLAN_RETURN",
+        "elapsed_s": 54.55069924599957,
+        "sim_time_s": 97.274,
+        "odom_distance_m": 41.916
+      },
+      {
+        "phase": "RETURNING",
+        "elapsed_s": 55.55575028000021,
+        "sim_time_s": 98.294,
+        "odom_distance_m": 42.102
+      },
+      {
+        "phase": "HOME_REACHED",
+        "elapsed_s": 87.23056603700024,
+        "sim_time_s": 129.914,
+        "odom_distance_m": 57.497
+      }
+    ],
+    "state_sample_counts": {
+      "TRACK_PP": 373,
+      "ALIGN_PATH": 194,
+      "BACKTRACK_PP": 412,
+      "PLAN_RETURN": 18,
+      "RETURN_ALIGN": 39,
+      "RETURN_PP": 533,
+      "HOME_REACHED": 1677
+    },
+    "settled_samples": 1641,
+    "settled_nonzero_command_samples": 0,
+    "settled_observation_duration_s": 90.7400084869987,
+    "final_map": "astar-return-maze2-map.npz",
+    "final_state": "astar-return-maze2-final.json",
+    "tracking": "astar-return-maze2-tracking.jsonl.gz",
+    "console_log": "astar-return-maze2-log.txt.gz",
+    "tracking_scope": "Starts mid-exploration at 18.923 m odometry; includes complete exit and return, plus stopped observation. Console log and final trajectory cover the launch."
+  },
+  "outer_wall_mini": {
+    "result": {
+      "state": "HOME_REACHED",
+      "success": true,
+      "finished": true,
+      "reason": "A* return completed; robot is back at the start",
+      "frame": "map",
+      "position": [
+        0.09728079304538056,
+        0.003411186892578858
+      ],
+      "home": [
+        -4.32800161874762e-05,
+        -1.6930979837107473e-09
+      ]
+    },
+    "planned_length_m": 2.771527045690824,
+    "final_home_distance_map_m": 0.09738383543925802,
+    "final_state": "astar-return-mini-final.json",
+    "console_log": "astar-return-mini-log.txt.gz"
+  },
+  "limitations": [
+    "One complete maze2 run and one outer-wall scene; not a completion-rate guarantee for all layouts.",
+    "Home distance is the controller latch distance in SLAM map coordinates, not Gazebo ground truth or a physical accuracy claim.",
+    "A* optimizes known-grid distance plus wall-clearance cost, not the globally shortest geometric path through unknown space.",
+    "Large open rooms can still satisfy the local exit detector."
+  ]
+}

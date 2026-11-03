@@ -4,3 +4,4 @@ log/
 __pycache__/
 *.pyc
 .pytest_cache/
+/docs/course_report_20261103/

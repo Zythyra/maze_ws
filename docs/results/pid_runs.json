@@ -1,0 +1,121 @@
+{
+  "full_final.jsonl.gz": {
+    "results": [
+      {
+        "t": 86.11784,
+        "sim": 83.5,
+        "kind": "result",
+        "data": {
+          "state": "EXIT_REACHED",
+          "finished": true,
+          "success": true,
+          "distance_m": 81.727945,
+          "exit_clear_distance_m": 0.892833,
+          "x": 6.659367,
+          "y": -13.556176
+        }
+      }
+    ],
+    "states": {
+      "WAIT_START": 1,
+      "TRACE_CURVATURE": 809,
+      "TRACE_PID": 4,
+      "TRACE_GAP": 1,
+      "EXIT_VERIFY_OPEN": 2,
+      "EXIT_LEAVING": 1,
+      "EXIT_BRAKING": 16,
+      "EXIT_REACHED": 32
+    },
+    "world_last": {
+      "t": 89.03551,
+      "sim": 86.4,
+      "kind": "world",
+      "x": 4.212536638337317,
+      "y": -12.887593018119581,
+      "z": 0.00988675112047037,
+      "yaw": -1.5670939571259754
+    },
+    "world_samples": 175,
+    "elapsed_wall_s": 83.52420000000001
+  },
+  "full_speed15_exitfix.jsonl.gz": {
+    "results": [
+      {
+        "t": 61.62805,
+        "sim": 58.1,
+        "kind": "result",
+        "data": {
+          "state": "EXIT_REACHED",
+          "finished": true,
+          "success": true,
+          "distance_m": 83.735381,
+          "exit_clear_distance_m": 1.511878,
+          "x": 6.688274,
+          "y": -14.269479
+        }
+      }
+    ],
+    "states": {
+      "WAIT_START": 1,
+      "TRACE_CURVATURE": 553,
+      "TRACE_PID": 2,
+      "TRACE_GAP": 1,
+      "EXIT_VERIFY_OPEN": 1,
+      "EXIT_LEAVING": 1,
+      "EXIT_BRAKING": 21,
+      "EXIT_REACHED": 32
+    },
+    "world_last": {
+      "t": 64.30973,
+      "sim": 60.7,
+      "kind": "world",
+      "x": 4.238363388864588,
+      "y": -13.594932389557755,
+      "z": 0.009886748353477071,
+      "yaw": -1.5246905670290072
+    },
+    "world_samples": 129,
+    "elapsed_wall_s": 58.08413
+  },
+  "full_speed15.jsonl.gz": {
+    "results": [
+      {
+        "t": 72.19598,
+        "sim": 70.1,
+        "kind": "result",
+        "data": {
+          "state": "EXIT_REACHED",
+          "finished": true,
+          "success": true,
+          "distance_m": 93.473843,
+          "exit_clear_distance_m": 1.608345,
+          "x": 3.842418,
+          "y": -14.320367
+        }
+      }
+    ],
+    "states": {
+      "WAIT_START": 1,
+      "TRACE_CURVATURE": 603,
+      "TRACE_PID": 11,
+      "TRACE_GAP": 2,
+      "EXIT_VERIFY_OPEN": 5,
+      "FRONT_TURN_RIGHT": 29,
+      "CLEARANCE_RECOVERY": 27,
+      "LEFT_LINE_LOST": 1,
+      "EXIT_BRAKING": 21,
+      "EXIT_REACHED": 31
+    },
+    "world_last": {
+      "t": 75.18905,
+      "sim": 73.0,
+      "kind": "world",
+      "x": 0.5607571225728247,
+      "y": -13.659548847985098,
+      "z": 0.009886758399795893,
+      "yaw": -2.6353783846306507
+    },
+    "world_samples": 150,
+    "elapsed_wall_s": 70.0991
+  }
+}
