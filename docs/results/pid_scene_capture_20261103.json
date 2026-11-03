@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-03",
+  "launch": "ros2 launch maze_wall_pid merged.launch.py",
+  "slam_enabled": false,
+  "result": {
+    "state": "EXIT_REACHED",
+    "finished": true,
+    "success": true,
+    "distance_m": 83.994993,
+    "exit_clear_distance_m": 1.508279,
+    "x": 6.674869,
+    "y": -14.238499
+  },
+  "odom": {
+    "x": 6.67505655908313,
+    "y": -14.227994569788802,
+    "v": -0.0003765200548051824,
+    "w": -0.00032549546270885336
+  },
+  "markers": [
+    {
+      "id": 0,
+      "frame": "base_footprint",
+      "text": "",
+      "action": 2
+    },
+    {
+      "id": 1,
+      "frame": "base_footprint",
+      "text": "",
+      "action": 2
+    },
+    {
+      "id": 2,
+      "frame": "base_footprint",
+      "text": "EXIT REACHED\nRobot stopped",
+      "action": 0
+    },
+    {
+      "id": 3,
+      "frame": "base_footprint",
+      "text": "",
+      "action": 2
+    }
+  ],
+  "status": {
+    "state": "EXIT_REACHED",
+    "enabled": false,
+    "finished": true,
+    "trace_points": 0,
+    "line_error_m": 0.0,
+    "p_term": 0.0,
+    "i_term": 0.0,
+    "d_term": 0.0,
+    "linear_m_s": 0.0,
+    "angular_rad_s": 0.0,
+    "front_m": 0.4517,
+    "left_m": 3.5,
+    "right_m": 1.0635,
+    "exit_left_m": 3.5,
+    "exit_right_m": 1.2218,
+    "target_left_m": 0.8497,
+    "distance_m": 84.0055,
+    "corridor_width_m": 1.6994,
+    "width_observed": false,
+    "left_wall_perpendicular_m": -1.0,
+    "right_wall_perpendicular_m": -1.0,
+    "geometry_valid": false,
+    "lateral_error_m": -0.0,
+    "geometry_source": 0,
+    "right_trace_points": 0,
+    "heading_error_rad": -0.0,
+    "curvature_m_inv": -0.0,
+    "filtered_curvature_m_inv": 0.0,
+    "curve_fit_rms_m": 0.0,
+    "exit_progress_m": 1.5083
+  }
+}

@@ -20,6 +20,10 @@
 
 数据：[三轮结果、状态计数及停车位置](results/pid_runs.json)。图由原始位姿和速度采样重绘，完整压缩日志随课程工作空间代码包提供。
 
+![PID驶出迷宫后停车的Gazebo与RViz画面](images/pid_gazebo_rviz.png)
+
+2026年11月3日使用原有`ros2 launch maze_wall_pid merged.launch.py`配置补拍完成画面，未启用SLAM。Gazebo展示出口停车位置；RViz展示里程计轨迹及`EXIT REACHED`状态。[本次停车状态记录](results/pid_scene_capture_20261103.json)与上表历史计时分别保存。
+
 ## PP：maze2探索、Dijkstra节点转移与A*返航
 
 2026年10月20日运行maze2。机器人边探索边维护道路拓扑与SLAM地图，登记左右岔路并左优先选择；需要转移到其他待探索岔路时，Dijkstra按已连接拓扑道路的累计长度选择最短路线。SLAM辅助定位、锚点更新、墙面校正与已知死路判定。识别出口后，在已知安全栅格上运行A*返航，再由PP跟踪回到起点。
